@@ -1,0 +1,16 @@
+Questão 1
+
+Escreva um programa em Java para criar cinco contas simples para cinco clientes diferentes, 
+deposite uma quantia qualquer em cada uma das contas e depois imprima as informações de cada uma delas.
+
+Exemplo:
+
+Entrada
+Não tem entrada
+
+Saída
+ContaSimples numero 1, titular Joao, data 13/06/2001, saldo R$ 700,00
+ContaSimples numero 2, titular Maria, data 13/06/2001, saldo R$ 130,00
+ContaSimples numero 3, titular Pedro, data 13/06/2001, saldo R$ 300,00
+ContaSimples numero 4, titular Jacques, data 13/06/2001, saldo R$ 10000000,00
+ContaSimples numero 5, titular Alexandre, data 13/06/2001, saldo R$ 0,00
