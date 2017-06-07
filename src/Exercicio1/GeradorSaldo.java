@@ -4,11 +4,10 @@ import java.util.Random;
 
 
 public class GeradorSaldo{
-	Double saldo;
+	int saldo;
 	
 	GeradorSaldo(){
-		saldo = new Random().nextDouble();
-		saldo = saldo * 1000* saldo;
+		saldo = new Random().nextInt(10000)+0;
 		return;
 	}
 }

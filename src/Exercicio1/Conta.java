@@ -8,7 +8,7 @@ public class Conta {
 	String type; //recebe tipo de conta
 	String nome; //nome do titular
 	Calendar data; //data criação da conta
-	Double saldo;
+	int saldo;
 	
 	String getType() {
 		return type;
@@ -28,10 +28,10 @@ public class Conta {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Double getSaldo() {
+	public int getSaldo() {
 		return saldo;
 	}
-	public void setSaldo(Double saldo) {
+	public void setSaldo(int saldo) {
 		this.saldo = saldo;
 	}
 }
