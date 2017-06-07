@@ -10,7 +10,7 @@ public class GerarConta {
 	public GerarConta() {
 
 		
-		 //apenas para enumerar a saída
+		 //apenas para numerar a saída
 		int indice = 1;
 		//limite de contas no for do array
 		int limite = 10;
