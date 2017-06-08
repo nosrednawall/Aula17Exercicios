@@ -1,0 +1,28 @@
+Questão 3
+Escreva um programa Java que leia Strings da entrada padrão, armazenando-as em uma coleção,
+ até encontrar o String fim, depois leia novamente vários Strings da entrada padrão até encontrar 
+ a palavra fim e diga se cada uma delas foi lida anteriormente ou não anteriormente.
+ 
+Exemplo:
+
+Entrada
+
+Antonio
+Pedro
+Joao
+Jose 
+Creusa
+Matias
+Rodrigo
+fim
+Antonio
+Jeronimo
+Carlos
+Alexandre
+fim
+Saída:
+
+Antonio localizado
+Jeronimo nao localizado
+Carlos nao localizado
+Alexandre localizado
