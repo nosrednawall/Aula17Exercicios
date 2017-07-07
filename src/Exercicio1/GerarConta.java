@@ -51,8 +51,9 @@ public class GerarConta {
 			//instanciando o objeto e alocando os dados do array nele
 			Conta conta = (Conta) it.next();
 			//imprimindo o objeto com seus valores
-			System.out.println(conta.type+ " numero "+indice+", titular "+conta.nome+", "
-			+sdf.format(conta.data.getTime())+", saldo R$"+conta.saldo+",00"); 
+			System.out.println(conta.type+ "\n Numero Conta: "+indice+"\n Nome do titular: "+conta.nome+"\n Data de criação da conta: "
+			+sdf.format(conta.data.getTime())+"\n Valor atual do saldo R$"+conta.saldo+",00\n-----------------------------------"
+					+ "------------------------------------------------"); 
 			indice++; //apenas para numerar
 		}
 	}

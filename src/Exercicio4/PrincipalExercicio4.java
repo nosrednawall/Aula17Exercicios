@@ -20,40 +20,46 @@ public class PrincipalExercicio4 {// inicio da classe
 		while (true) {
 			if (!algo.toUpperCase().equals("FIM")) {
 				int numero = Integer.parseInt(algo);
-			//	System.out.println(numero);
+				// System.out.println(numero);
 				arrayNumeros.add(numero);
 				sc.nextLine();
 				algo = sc.next();
 			} else {
+				int valorMinimo = Integer.MIN_VALUE;
 				System.out.println("\nFinal\n");
 				int aux;
 				Iterator lista1 = arrayNumeros.iterator();
 				while (lista1.hasNext()) {
 					int valor1 = (int) lista1.next();
-					ListIterator lista2 = arrayNumeros.listIterator();
+					Iterator lista2 = arrayNumeros.iterator();
 					while (lista2.hasNext()) {
 						int valor2 = (int) lista2.next();
-
 						if (valor1 < valor2) {
-							aux = valor1;
-							numerosOrdenados.add(aux);
+							numerosOrdenados.add(valor1);
+							System.out.println("oi");
+							lista1.remove();
 							break;
-						} else if (valor1 > valor2) {
-							aux = valor2;
-							numerosOrdenados.add(aux);
-							break;
+
+						}else {
+							lista2.remove();
 						}
+
+						/*
+						 * 
+						 * if (valorMinimo < valor1) { if (valor1 < valor2) { valorMinimo = valor1;
+						 * lista1.remove(); break; } } else { //valorMinimo = valor1;
+						 * //numerosOrdenados.add(valor1); lista1.remove(); break; } }
+						 * 
+						 * }
+						 */
+
 					}
 				}
+			if (lista1 == null) {
 				break;
 			}
+			
+			}
 		}
-
-		Iterator listaFinal = numerosOrdenados.iterator();
-		while (listaFinal.hasNext()) {
-			int valorFinal = (int) listaFinal.next();
-			System.out.println(valorFinal);
-		}
-
 	}
 }
